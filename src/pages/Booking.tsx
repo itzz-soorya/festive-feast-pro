@@ -39,7 +39,10 @@ const Booking = () => {
       status: 'pending'
     };
     
-    console.log('New booking:', newBooking);
+    // Log booking in development mode only
+    if (import.meta.env.DEV) {
+      console.log('New booking:', newBooking);
+    }
     
     toast({
       title: language === 'en' ? "Booking Submitted!" : "முன்பதிவு சமர்ப்பிக்கப்பட்டது!",
