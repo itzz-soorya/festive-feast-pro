@@ -8,89 +8,88 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Premium Catering Design System - Maroon, Gold, Cream */
+    --background: 30 15% 97%;  /* Warm cream background */
+    --foreground: 0 30% 15%;   /* Dark maroon text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 30% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 30% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Maroon Primary */
+    --primary: 0 100% 25%;     /* Deep maroon #800000 */
+    --primary-foreground: 45 100% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Gold Secondary */
+    --secondary: 45 100% 50%;  /* Rich gold #FFD700 */
+    --secondary-foreground: 0 30% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 30 15% 94%;
+    --muted-foreground: 0 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Gold Accent */
+    --accent: 45 100% 50%;     /* Gold accent */
+    --accent-foreground: 0 30% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 0 100% 25%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;  /* More rounded for premium feel */
 
-    --sidebar-background: 0 0% 98%;
+    /* Premium gradients */
+    --gradient-maroon: linear-gradient(135deg, hsl(0 100% 25%) 0%, hsl(0 80% 35%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 100% 50%) 0%, hsl(45 80% 60%) 100%);
+    --gradient-festive: linear-gradient(135deg, hsl(0 100% 25%) 0%, hsl(45 100% 50%) 100%);
+    
+    /* Premium shadows */
+    --shadow-maroon: 0 10px 30px -5px hsl(0 100% 25% / 0.3);
+    --shadow-gold: 0 10px 30px -5px hsl(45 100% 50% / 0.3);
+    --shadow-elegant: 0 20px 60px -10px hsl(0 100% 25% / 0.15);
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Animations */
+    --transition-premium: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark theme with warm maroon undertones */
+    --background: 0 20% 8%;    /* Deep dark maroon */
+    --foreground: 45 80% 85%;  /* Light gold text */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 25% 12%;
+    --card-foreground: 45 80% 85%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 25% 12%;
+    --popover-foreground: 45 80% 85%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 45 100% 55%;    /* Bright gold for dark mode */
+    --primary-foreground: 0 30% 15%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 60% 20%;    /* Dark maroon secondary */
+    --secondary-foreground: 45 80% 85%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 0 20% 15%;
+    --muted-foreground: 45 30% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 45 90% 55%;
+    --accent-foreground: 0 30% 15%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 45 80% 85%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 0 25% 20%;
+    --input: 0 25% 20%;
+    --ring: 45 100% 55%;
+
+    /* Dark mode gradients */
+    --gradient-maroon: linear-gradient(135deg, hsl(0 60% 20%) 0%, hsl(0 80% 30%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 90% 55%) 0%, hsl(45 70% 65%) 100%);
+    --gradient-festive: linear-gradient(135deg, hsl(0 60% 20%) 0%, hsl(45 90% 55%) 100%);
   }
 }
 
