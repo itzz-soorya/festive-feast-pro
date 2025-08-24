@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Festive Feast Pro...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        .spinner {
+            border: 3px solid rgba(255,255,255,0.3);
+            border-top: 3px solid white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Festive Feast Pro</h2>
+        <div class="spinner"></div>
+        <p>Loading application...</p>
+        <p><small>Redirecting to built version</small></p>
+    </div>
+    
+    <script>
+        // Check if we need to redirect to the built version
+        console.log('Root index.html loaded');
+        console.log('Current path:', window.location.pathname);
+        console.log('Current href:', window.location.href);
+        
+        // If this is the root and not already the built version, redirect
+        if (window.location.pathname === '/' || window.location.pathname === '/festive-feast-pro/') {
+            console.log('Attempting to load built app from dist...');
+            
+            // First try to load the test page to verify GitHub Pages is working
+            const testUrl = window.location.origin + window.location.pathname + 'test.html';
+            
+            fetch(testUrl)
+                .then(response => {
+                    if (response.ok) {
+                        console.log('Test page accessible, GitHub Pages is working');
+                        // Try to load the main app
+                        const appUrl = window.location.origin + window.location.pathname + 'dist/index.html';
+                        window.location.replace(appUrl);
+                    } else {
+                        console.error('Test page not accessible:', response.status);
+                        document.querySelector('.container').innerHTML = `
+                            <h2>Deployment Error</h2>
+                            <p>GitHub Pages deployment may still be in progress.</p>
+                            <p>Status: ${response.status}</p>
+                            <p>Please wait a few minutes and refresh.</p>
+                        `;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error checking deployment:', error);
+                    document.querySelector('.container').innerHTML = `
+                        <h2>Loading Error</h2>
+                        <p>Unable to verify deployment status.</p>
+                        <p>Please check your internet connection and try again.</p>
+                        <button onclick="window.location.reload()">Retry</button>
+                    `;
+                });
+        }
+    </script>
+</body>
+</html>
