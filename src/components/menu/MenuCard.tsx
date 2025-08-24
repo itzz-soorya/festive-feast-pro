@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -21,7 +22,7 @@ interface MenuCardProps {
   };
 }
 
-const MenuCard = ({ dish }: MenuCardProps) => {
+const MenuCard: React.FC<MenuCardProps> = ({ dish }) => {
   const { language } = useLanguage();
   const { addToCart, cartItems } = useCart();
 

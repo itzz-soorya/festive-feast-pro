@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Phone, Mail, Send } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -39,10 +39,7 @@ const Booking = () => {
       status: 'pending'
     };
     
-    // Log booking in development mode only
-    if (import.meta.env.DEV) {
-      console.log('New booking:', newBooking);
-    }
+    console.log('New booking:', newBooking);
     
     toast({
       title: language === 'en' ? "Booking Submitted!" : "முன்பதிவு சமர்ப்பிக்கப்பட்டது!",
