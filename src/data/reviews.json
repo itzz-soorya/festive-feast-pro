@@ -1,0 +1,48 @@
+{
+  "reviews": [
+    {
+      "id": "1",
+      "name": "Priya Sharma",
+      "rating": 5,
+      "feedback": {
+        "en": "Excellent service for our wedding! The food was delicious and guests loved every dish. Highly recommended!",
+        "ta": "எங்கள் திருமணத்திற்கு சிறந்த சேவை! உணவு சுவையாக இருந்தது மற்றும் விருந்தினர்கள் எல்லா உணவையும் விரும்பினர். மிகவும் பரிந்துரைக்கப்படுகிறது!"
+      },
+      "date": "2024-12-15",
+      "eventType": "wedding"
+    },
+    {
+      "id": "2",
+      "name": "Rajesh Kumar",
+      "rating": 4,
+      "feedback": {
+        "en": "Great catering for our corporate event. Professional service and tasty food. Will book again!",
+        "ta": "எங்கள் நிறுவன நிகழ்வுக்கு சிறந்த கேட்டரிங். தொழில்முறை சேவை மற்றும் சுவையான உணவு. மீண்டும் புக் செய்வோம்!"
+      },
+      "date": "2024-12-10",
+      "eventType": "corporate"
+    },
+    {
+      "id": "3",
+      "name": "Meera Krishnan",
+      "rating": 5,
+      "feedback": {
+        "en": "Amazing food quality and presentation. Perfect for our family celebration. Thank you!",
+        "ta": "அற்புதமான உணவு தரம் மற்றும் விளக்கக்காட்சி. எங்கள் குடும்ப கொண்டாட்டத்திற்கு சரியானது. நன்றி!"
+      },
+      "date": "2024-12-05",
+      "eventType": "party"
+    },
+    {
+      "id": "4",
+      "name": "Arun Patel",
+      "rating": 4,
+      "feedback": {
+        "en": "Good variety of dishes and reasonable service. The biryani was exceptional!",
+        "ta": "நல்ல வகையான உணவுகள் மற்றும் நியாயமான சேவை. பிரியாணி அசாதாரணமாக இருந்தது!"
+      },
+      "date": "2024-11-28",
+      "eventType": "special"
+    }
+  ]
+}

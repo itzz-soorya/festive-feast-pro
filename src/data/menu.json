@@ -1,0 +1,108 @@
+{
+  "dishes": [
+    {
+      "id": "1",
+      "name": {
+        "en": "Chicken Biryani",
+        "ta": "சிக்கன் பிரியாணி"
+      },
+      "category": "non-veg",
+      "image": "https://images.unsplash.com/photo-1563379091339-03246963d96c?w=400&h=300&fit=crop",
+      "description": {
+        "en": "Aromatic basmati rice with tender chicken",
+        "ta": "மெல்லிய கோழியுடன் நறுமணமான பாஸ்மதி அரிசி"
+      }
+    },
+    {
+      "id": "2", 
+      "name": {
+        "en": "Vegetable Biryani",
+        "ta": "காய்கறி பிரியாணி"
+      },
+      "category": "veg",
+      "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop",
+      "description": {
+        "en": "Fragrant rice with mixed vegetables and spices",
+        "ta": "கலவையான காய்கறிகள் மற்றும் மசாலாக்களுடன் நறுமணமான அரிசி"
+      }
+    },
+    {
+      "id": "3",
+      "name": {
+        "en": "Mutton Curry",
+        "ta": "ஆட்டு கறி"
+      },
+      "category": "non-veg",
+      "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop",
+      "description": {
+        "en": "Traditional spicy mutton curry",
+        "ta": "பாரம்பரிய காரமான ஆட்டு கறி"
+      }
+    },
+    {
+      "id": "4",
+      "name": {
+        "en": "Paneer Butter Masala",
+        "ta": "பன்னீர் பட்டர் மசாலா"
+      },
+      "category": "veg",
+      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop",
+      "description": {
+        "en": "Creamy paneer in rich tomato gravy",
+        "ta": "பணக்கார தக்காளி குழம்பில் கிரீமி பன்னீர்"
+      }
+    },
+    {
+      "id": "5",
+      "name": {
+        "en": "Gulab Jamun",
+        "ta": "குலாப் ஜாமுன்"
+      },
+      "category": "sweets",
+      "image": "https://images.unsplash.com/photo-1606830981554-1db7f0c1f7d0?w=400&h=300&fit=crop",
+      "description": {
+        "en": "Traditional milk dumplings in sugar syrup",
+        "ta": "சர்க்கரை சிரப்பில் பாரம்பரிய பால் பாலகாரம்"
+      }
+    },
+    {
+      "id": "6",
+      "name": {
+        "en": "Rasgulla",
+        "ta": "ரஸ்குல்லா"
+      },
+      "category": "sweets",
+      "image": "https://images.unsplash.com/photo-1606831427180-ac1e65abddab?w=400&h=300&fit=crop",
+      "description": {
+        "en": "Soft cottage cheese balls in syrup",
+        "ta": "சிரப்பில் மென்மையான பனீர் உருண்டைகள்"
+      }
+    },
+    {
+      "id": "7",
+      "name": {
+        "en": "Fish Curry",
+        "ta": "மீன் கறி"
+      },
+      "category": "non-veg",
+      "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop",
+      "description": {
+        "en": "Spicy fish curry with coconut milk",
+        "ta": "தேங்காய் பாலுடன் காரமான மீன் கறி"
+      }
+    },
+    {
+      "id": "8",
+      "name": {
+        "en": "Dal Tadka",
+        "ta": "தால் தட்கா"
+      },
+      "category": "veg",
+      "image": "https://images.unsplash.com/photo-1571197119282-7c4a2b1170ce?w=400&h=300&fit=crop",
+      "description": {
+        "en": "Lentil curry with spiced tempering",
+        "ta": "மசாலா தாளிப்புடன் பருப்பு கறி"
+      }
+    }
+  ]
+}

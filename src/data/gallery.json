@@ -1,0 +1,58 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "image": "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=600&h=400&fit=crop",
+      "caption": {
+        "en": "Wedding Catering, 2024",
+        "ta": "திருமண கேட்டரிங், 2024"
+      },
+      "eventType": "wedding"
+    },
+    {
+      "id": "2",
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop",
+      "caption": {
+        "en": "Corporate Event, 2024",
+        "ta": "நிறுவன நிகழ்வு, 2024"
+      },
+      "eventType": "corporate"
+    },
+    {
+      "id": "3",
+      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
+      "caption": {
+        "en": "Birthday Party Catering, 2024",
+        "ta": "பிறந்தநாள் விழா கேட்டரிங், 2024"
+      },
+      "eventType": "party"
+    },
+    {
+      "id": "4",
+      "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop",
+      "caption": {
+        "en": "Anniversary Celebration, 2024",
+        "ta": "ஆண்டுவிழா கொண்டாட்டம், 2024"
+      },
+      "eventType": "special"
+    },
+    {
+      "id": "5",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=600&h=400&fit=crop",
+      "caption": {
+        "en": "Traditional Wedding Feast, 2024",
+        "ta": "பாரம்பரிய திருமண விருந்து, 2024"
+      },
+      "eventType": "wedding"
+    },
+    {
+      "id": "6",
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop",
+      "caption": {
+        "en": "Business Conference Catering, 2024",
+        "ta": "வணிக மாநாட்டு கேட்டரிங், 2024"
+      },
+      "eventType": "corporate"
+    }
+  ]
+}
