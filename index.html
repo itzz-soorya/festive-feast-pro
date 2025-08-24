@@ -28,12 +28,12 @@
         </div>
       </div>
     </div>
-    <script type="module" src="/src/main.tsx"></script>
     <script>
-      // Add basic error handling
+      // Add basic error handling before loading main script
       window.addEventListener('error', function(e) {
         console.error('Global error:', e.error);
-        document.getElementById('root').innerHTML = '<div style="padding: 20px; color: red; font-family: Arial;">Error loading application: ' + e.error.message + '</div>';
+        console.error('Error details:', e.filename, e.lineno, e.colno);
+        document.getElementById('root').innerHTML = '<div style="padding: 20px; color: red; font-family: Arial;">Error loading application: ' + e.error.message + '<br>File: ' + e.filename + '<br>Line: ' + e.lineno + '</div>';
       });
       
       // Add unhandled promise rejection handling
@@ -41,6 +41,12 @@
         console.error('Unhandled promise rejection:', e.reason);
         document.getElementById('root').innerHTML = '<div style="padding: 20px; color: red; font-family: Arial;">Promise rejection: ' + e.reason + '</div>';
       });
+      
+      // Add load debugging
+      console.log('HTML loaded, about to load main script');
+      console.log('Current URL:', window.location.href);
+      console.log('Base URL:', document.querySelector('base')?.href || 'No base tag');
     </script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

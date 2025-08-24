@@ -1,0 +1,29 @@
+/* Simple test to verify the app is loading */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Add a test style to verify CSS is working */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+/* Test background to verify CSS loading */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #000 25%, transparent 25%), 
+              linear-gradient(-45deg, #000 25%, transparent 25%), 
+              linear-gradient(45deg, transparent 75%, #000 75%), 
+              linear-gradient(-45deg, transparent 75%, #000 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  opacity: 0.03;
+  z-index: -1;
+  pointer-events: none;
+}
