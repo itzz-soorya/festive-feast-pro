@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -12,7 +11,7 @@ interface CartSidebarProps {
   onClose: () => void;
 }
 
-const CartSidebar: React.FC<CartSidebarProps> = ({ isOpen, onClose }) => {
+const CartSidebar = ({ isOpen, onClose }: CartSidebarProps) => {
   const { cartItems, removeFromCart, clearCart } = useCart();
   const { language } = useLanguage();
   const navigate = useNavigate();

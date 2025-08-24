@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, Send } from 'lucide-react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';

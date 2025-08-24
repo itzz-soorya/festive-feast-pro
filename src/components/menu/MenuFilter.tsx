@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -7,7 +6,7 @@ interface MenuFilterProps {
   onCategoryChange: (category: string) => void;
 }
 
-const MenuFilter: React.FC<MenuFilterProps> = ({ selectedCategory, onCategoryChange }) => {
+const MenuFilter = ({ selectedCategory, onCategoryChange }: MenuFilterProps) => {
   const { t } = useLanguage();
 
   const categories = [
